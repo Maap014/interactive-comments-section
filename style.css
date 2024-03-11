@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: hsl(223, 19%, 93%);
+  margin: 0 10px;
+}
+
+.wrapper,
+#comments-section {
+  display: grid;
+  grid-auto-flow: row;
+  place-content: center;
+  gap: 10px;
+  margin: 2vh auto;
+  max-width: 370px;
+}
+#comments-section {
+  margin: 0;
+}
+
+.user-comment-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: hsl(228, 33%, 97%);
+  color: hsl(211, 10%, 45%);
+  box-shadow: 0px 0px 1px hsl(211deg 10% 45% / 23%);
+}
+.user-info {
+  display: flex;
+  gap: 4px;
+}
+
+.content-cotainer {
+  margin: 12px 0;
+}
+
+.comment-footer,
+.send-comment-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-score {
+  border-radius: 10px;
+  background-color: hsla(211, 10%, 45%, 0.563);
+}
+.reply-box {
+  display: flex;
+  gap: 2px;
+}
+
+.reply-user,
+.score {
+  color: hsl(238, 40%, 52%);
+}
+
+/* add comment section */
+#comment-form {
+  display: flex;
+  flex-direction: column;
+}
+#comment-box {
+  max-height: 90px;
+  margin-bottom: 15px;
+  border: none;
+  padding: 15px;
+}
+
+label {
+  position: absolute;
+  left: -99999px;
+}
